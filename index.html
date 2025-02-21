@@ -5,6 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Présentation des Groupes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .card-subtitle {
+            color: #7f8c8d;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        h1, h2 {
+            color: #34495e;
+            font-weight: bold;
+        }
+        #presentation {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        #presentation-title {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .img-fluid {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .position-absolute {
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body class="container mt-5">
 
@@ -15,23 +70,86 @@
         </a>
     </div>
 
-    
-    <img src="groupe.jpg" alt="Image de groupe" class="img-fluid d-block mx-auto my-4">
-    <h1 class="text-center">Présentation des Groupes</h1>
-    <div class="row">
-        <div class="col-md-4">
+    <!-- Title: "Module Soft Skills By Mr. Bouhsas" -->
+    <h2 class="text-center mb-4">Module Soft Skills By Mr. Bouhsas</h2>
+
+    <!-- Smaller group image -->
+    <img src="groupe.jpg" alt="Image de groupe" class="img-fluid d-block mx-auto my-4" width="500">
+
+    <h1 class="text-center mb-5">Présentation des Groupes</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Groupe 1 -->
+        <div class="col">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Groupe 1</h5>
-                    <button class="btn btn-primary" onclick="showPresentation(1)">Voir la présentation</button>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Analyse de Données</h6>
+                    <ul class="list-unstyled">
+                        <li>Étudiant 1</li>
+                        <li>Étudiant 2</li>
+                        <li>Étudiant 3</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(1)">Voir la présentation</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <!-- Groupe 2 -->
+        <div class="col">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Groupe 2</h5>
-                    <button class="btn btn-primary" onclick="showPresentation(2)">Voir la présentation</button>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Développement Web</h6>
+                    <ul class="list-unstyled">
+                        <li>Étudiant A</li>
+                        <li>Étudiant B</li>
+                        <li>Étudiant C</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(2)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+        <!-- Groupe 3 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 3</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Sécurité Informatique</h6>
+                    <ul class="list-unstyled">
+                        <li>Étudiant X</li>
+                        <li>Étudiant Y</li>
+                        <li>Étudiant Z</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(3)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+        <!-- Groupe 4 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 4</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Intelligence Artificielle</h6>
+                    <ul class="list-unstyled">
+                        <li>Étudiant D</li>
+                        <li>Étudiant E</li>
+                        <li>Étudiant F</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(4)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+        <!-- Groupe 5 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 5</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Gestion de Projet</h6>
+                    <ul class="list-unstyled">
+                        <li>Étudiant P</li>
+                        <li>Étudiant Q</li>
+                        <li>Étudiant R</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(5)">Voir la présentation</button>
                 </div>
             </div>
         </div>
@@ -39,7 +157,7 @@
 
     <!-- PowerPoint Viewer -->
     <div id="presentation" class="mt-5" style="display: none;">
-        <h2 id="presentation-title"></h2>
+        <h2 id="presentation-title" class="text-center mb-4"></h2>
         <iframe id="pptViewer" src="" width="100%" height="600px" style="border: none;"></iframe>
     </div>
 
@@ -47,18 +165,32 @@
         function showPresentation(group) {
             const presentations = {
                 1: { 
-                    title: "Présentation Groupe 1", 
+                    title: "Présentation Groupe 1 - Analyse de Données", 
                     file: "https://www.dropbox.com/scl/fi/bn1xo52uu67duhcya93z7/hamide.pptx?rlkey=fj1dtbe8kx9b33456houy17tl&st=et0qr7ia&raw=1" 
                 },
                 2: { 
-                    title: "Présentation Groupe 2", 
+                    title: "Présentation Groupe 2 - Développement Web", 
                     file: "https://yourwebsite.com/presentation2.pptx" 
+                },
+                3: { 
+                    title: "Présentation Groupe 3 - Sécurité Informatique", 
+                    file: "https://yourwebsite.com/presentation3.pptx" 
+                },
+                4: { 
+                    title: "Présentation Groupe 4 - Intelligence Artificielle", 
+                    file: "https://yourwebsite.com/presentation4.pptx" 
+                },
+                5: { 
+                    title: "Présentation Groupe 5 - Gestion de Projet", 
+                    file: "https://yourwebsite.com/presentation5.pptx" 
                 }
             };
 
             document.getElementById("presentation-title").innerText = presentations[group].title;
             document.getElementById("pptViewer").src = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(presentations[group].file)}`;
             document.getElementById("presentation").style.display = "block";
+            // Scroll to the presentation section
+            document.getElementById("presentation").scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 
